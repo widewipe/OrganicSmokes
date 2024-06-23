@@ -1,0 +1,46 @@
+@font-face {
+    font-family: futura;
+    src: url('./Futura/futur.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura;
+    src: url('./Futura/futura\ light\ bt.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura;
+    src: url('./Futura/futura\ medium\ bt.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura;
+    src: url('./Futura/Futura\ Heavy\ font.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura;
+    src: url('./Futura/Futura\ Bold\ font.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura;
+    src: url('./Futura/Futura\ Extra\ Black\ font.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: emotional;
+    src: url('./EmotionalRescue/EmotionalRescue.ttf');
+}
