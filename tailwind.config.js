@@ -5,15 +5,15 @@ module.exports = {
     extend: {
       fontFamily: {
         gilory: ['Gilory', 'sans-serif'],
-        // 'gilroy':['gilroy'],
+        sans: ['Gilory', 'sans-serif'],
         // 'futura': ['futura', 'sans-serif'],
         // 'poppins': ['Poppins', 'sans-serif'],
-        // 'emot': ['emotional', 'serif']
+        'emot': ['emotional', 'serif']
+      },
+      colors: {
+        'primary': '#FF6E05'
       }
     },
-    colors: {
-      'primary': '#FF6E05'
-    }
   },
   plugins: [],
 }
