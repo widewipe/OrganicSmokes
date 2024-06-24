@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'futura': ['futura', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif'],
-        'emot': ['emotional', 'serif']
+        gilory: ['Gilory', 'sans-serif'],
+        // 'gilroy':['gilroy'],
+        // 'futura': ['futura', 'sans-serif'],
+        // 'poppins': ['Poppins', 'sans-serif'],
+        // 'emot': ['emotional', 'serif']
       }
     },
     colors: {
