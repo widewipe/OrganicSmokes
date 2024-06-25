@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'futura': ['futura', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif'],
+        gilory: ['Gilory', 'sans-serif'],
+        sans: ['Gilory', 'sans-serif'],
+        // 'futura': ['futura', 'sans-serif'],
+        // 'poppins': ['Poppins', 'sans-serif'],
         'emot': ['emotional', 'serif']
+      },
+      colors: {
+        'primary': '#FF6E05'
       }
     },
-    colors: {
-      'primary': '#FF6E05'
-    }
   },
   plugins: [],
 }

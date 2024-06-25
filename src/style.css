@@ -2,4 +2,48 @@
 
 @tailwind base;
 @tailwind components;
+
+@layer base {
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 200;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Thin.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 300;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Light.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 400;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Regular.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 500;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Medium.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 600;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-SemiBold.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 700;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Bold.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 800;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-ExtraBold.ttf) format("truetype");
+    }
+    @font-face {
+        font-family: 'Gilory';
+        font-weight: 900;
+        src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Black.ttf) format("truetype");
+    }
+}
+
 @tailwind utilities;
