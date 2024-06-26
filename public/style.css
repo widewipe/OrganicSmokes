@@ -638,8 +638,8 @@ video {
   bottom: 3vw;
 }
 
-.top-\[15vh\]{
-  top: 15vh;
+.top-\[10vh\]{
+  top: 10vh;
 }
 
 .z-10{
@@ -688,6 +688,8 @@ video {
 
 .mt-\[2vh\]{
   margin-top: 2vh;
+.mt-\[7vh\]{
+  margin-top: 7vh;
 }
 
 .flex{
@@ -841,10 +843,6 @@ video {
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 
 .rounded-full{
