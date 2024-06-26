@@ -1,9 +1,11 @@
 let ash=document.getElementById("ash_png")
 let burn=document.getElementById("burn_png")
 let second_page=document.getElementsByClassName("page2")[0]
+let tl = gsap.timeline({});
+
 ash.addEventListener('mouseover',()=>{
     console.log("mouse enter")
-    tl=gsap.timeline()
+    
     
     // gsap.to("#flames",{
     //     opacity:0.4,
