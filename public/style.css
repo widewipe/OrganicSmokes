@@ -598,16 +598,16 @@ video {
   position: relative;
 }
 
-.bottom-20{
-  bottom: 5rem;
-}
-
 .bottom-\[25vw\]{
   bottom: 25vw;
 }
 
 .bottom-\[30vw\]{
   bottom: 30vw;
+}
+
+.bottom-\[3vw\]{
+  bottom: 3vw;
 }
 
 .left-1\/2{
@@ -628,14 +628,6 @@ video {
 
 .top-80{
   top: 20rem;
-}
-
-.top-\[10vh\]{
-  top: 10vh;
-}
-
-.bottom-\[3vw\]{
-  bottom: 3vw;
 }
 
 .top-\[10vh\]{
@@ -678,16 +670,14 @@ video {
   margin-top: 1.5vw;
 }
 
+.mt-\[2vh\]{
+  margin-top: 2vh;
+}
+
 .mt-\[5vh\]{
   margin-top: 5vh;
 }
 
-.mt-\[7vh\]{
-  margin-top: 7vh;
-}
-
-.mt-\[2vh\]{
-  margin-top: 2vh;
 .mt-\[7vh\]{
   margin-top: 7vh;
 }
@@ -776,10 +766,6 @@ video {
   width: 100%;
 }
 
-.w-\[88vw\]{
-  width: 88vw;
-}
-
 .max-w-\[80vw\]{
   max-width: 80vw;
 }
@@ -801,11 +787,6 @@ video {
 
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[1vw\]{
-  --tw-translate-x: -1vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -935,6 +916,10 @@ video {
   line-height: 1;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -948,15 +933,6 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
 }
 
 .font-black{
@@ -987,6 +963,10 @@ video {
   font-weight: 600;
 }
 
+.leading-3{
+  line-height: .75rem;
+}
+
 .leading-none{
   line-height: 1;
 }
@@ -997,10 +977,6 @@ video {
 
 .leading-tight{
   line-height: 1.25;
-}
-
-.leading-3{
-  line-height: .75rem;
 }
 
 .tracking-normal{
@@ -1062,10 +1038,6 @@ video {
 
   .sm\:top-\[25vh\]{
     top: 25vh;
-  }
-
-  .sm\:mt-8{
-    margin-top: 2rem;
   }
 
   .sm\:mt-6{
