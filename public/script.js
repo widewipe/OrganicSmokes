@@ -28,13 +28,50 @@ ash.addEventListener('mouseleave',()=>{
     
 })
 gsap.from(".page2",{
-    y:350,
-    opacity:0.1,
-    duration:2.2,
+    y:200,
+    opacity:0,
+    duration:1,
     scrollTrigger:{
         trigger:".page2",
-        start: "top 65%",
+        start: "top 80%",
         end: "top 30%",
         
+    }
+})
+
+// PAGE 3
+
+gsap.from(".p3h", {
+    opacity: 0,
+    y: 75,
+    duration: 0.5,
+    scrollTrigger: {
+        trigger: '.p3h',
+        start: 'top 80%',
+        end: 'top 30%',
+    }
+})
+
+gsap.from(".lrow", {
+    x: -200,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.lrow',
+        start: 'top 80%',
+        end: 'top 30%',
+    }
+})
+
+gsap.from(".rrow", {
+    x: 200,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.lrow',
+        start: 'top 80%',
+        end: 'top 30%',
     }
 })
