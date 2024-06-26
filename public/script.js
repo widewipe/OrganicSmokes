@@ -28,12 +28,12 @@ ash.addEventListener('mouseleave',()=>{
     
 })
 gsap.from(".page2",{
-    y:350,
-    opacity:0.1,
-    duration:2.2,
+    y:200,
+    opacity:0,
+    duration:1,
     scrollTrigger:{
         trigger:".page2",
-        start: "top 65%",
+        start: "top 80%",
         end: "top 30%",
         
     }
