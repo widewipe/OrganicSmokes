@@ -46,37 +46,53 @@ gsap.from(".box",{
     }
 })
 
-tl.from(".text-center",{
-    y:150,
-    scale:0.9,
-    opacity:0,
-    // duration:2.2,
-    scrollTrigger:{
-        trigger:".page3",
-        start: "top 65%",
-        
-        end: "top 10%",
-        scrub:2
-        
-    }
-})
-tl.from(".flex-text",{
-    y:150,
-    
-    opacity:0,
-    // duration:2.2,
-    scrollTrigger:{
-        trigger:".page3",
-        start: "top 65%",
-        
-        end: "top 10%",
-        scrub:2
+// PAGE 3
+
+gsap.from(".p3h", {
+    opacity: 0,
+    y: 75,
+    duration: 0.5,
+    scrollTrigger: {
+        trigger: '.p3h',
+        start: 'top 80%',
+        end: 'top 30%',
+       
     }
 })
 
-gsap.to("#product_pack", { duration: 2, y:-0.5, ease: Power1.easeInOut, repeat: -1, yoyo: true })
+gsap.from(".lrow", {
+    x: -200,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.lrow',
+        start: 'top 80%',
+        end: 'top 30%',
+        
+    }
+})
 
+gsap.from(".rrow", {
+    x: 200,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: '.lrow',
+        start: 'top 80%',
+        end: 'top 30%',
+    }
+})
 
+//page4
+
+   //float animation
+
+gsap.to("#product_pack", { duration: 2, y:-0.1, ease: Power1.easeInOut, repeat: -1, yoyo: true })
+
+   //fade animation
+   
 const productanimation=()=>{
 tlproduct=new TimelineMax({ repeat: -1 })
 
