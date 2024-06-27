@@ -635,6 +635,10 @@ video {
   top: 20rem;
 }
 
+.top-24{
+  top: 6rem;
+}
+
 .top-\[10vh\]{
   top: 10vh;
 }

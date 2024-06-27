@@ -39,16 +39,6 @@ gsap.from(".box",{
     ease: "power2.out" ,
     duration:1,
     stagger: 0.1,
-
-// page2
-
-gsap.from(".box",{
-    y:200,
-    opacity:0,
-    delay:0.3,
-    ease: "power2.out" ,
-    duration:1,
-    stagger: 0.1,
     scrollTrigger:{
         trigger:".page2",
         start: "top 80%",
@@ -57,19 +47,6 @@ gsap.from(".box",{
     }
 })
 
-// PAGE 3
-
-gsap.from(".p3h", {
-    opacity: 0,
-    y: 75,
-    duration: 0.5,
-    scrollTrigger: {
-        trigger: '.p3h',
-        start: 'top 80%',
-        end: 'top 30%',
-       
-    }
-})
 
 // PAGE 3
 
