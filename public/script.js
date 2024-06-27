@@ -38,3 +38,69 @@ gsap.from(".page2",{
         
     }
 })
+
+tl.from(".text-center",{
+    y:150,
+    scale:0.9,
+    opacity:0,
+    // duration:2.2,
+    scrollTrigger:{
+        trigger:".page3",
+        start: "top 65%",
+        
+        end: "top 10%",
+        scrub:2
+        
+    }
+})
+tl.from(".flex-text",{
+    y:150,
+    
+    opacity:0,
+    // duration:2.2,
+    scrollTrigger:{
+        trigger:".page3",
+        start: "top 65%",
+        
+        end: "top 10%",
+        scrub:2
+    }
+})
+
+gsap.to("#product_pack", { duration: 2, y:-0.5, ease: Power1.easeInOut, repeat: -1, yoyo: true })
+
+
+const productanimation=()=>{
+tlproduct=new TimelineMax({ repeat: -1 })
+
+.from(".pack1",{
+    opacity:0,
+    y:45,
+    delay:0.1,
+    duration:1.5
+})
+
+.to(".pack1",{
+    opacity:0,
+    y:-45,
+    delay:6,
+    duration:1.5
+})
+
+
+.from(".pack2",{
+    opacity:0,
+    y:45,
+    duration:1.5
+})
+
+.to(".pack2",{
+    opacity:0,
+    y:-45,
+    delay:6,
+    duration:1.5
+})
+
+gsap.to(tlproduct, 27, {ease:Power1.easeInOut})
+}
+productanimation()
