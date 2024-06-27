@@ -634,6 +634,10 @@ video {
   top: 15vh;
 }
 
+.top-24{
+  top: 6rem;
+}
+
 .z-10{
   z-index: 10;
 }
