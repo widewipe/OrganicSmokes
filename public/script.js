@@ -82,3 +82,30 @@ gsap.from(".rrow", {
         end: 'top 30%',
     }
 })
+
+// PAGE 5
+
+let p5h = document.getElementById('products-heading');
+let ts = document.getElementById('topsellers');
+
+gsap.from(p5h, {
+    opacity: 0,
+    x: -500,
+    duration: 0.5,
+    scrollTrigger: {
+        trigger: '.page5',
+        start: 'top 80%',
+        end: 'top 30%',
+    }
+})
+
+gsap.from(ts, {
+    y: -70,
+    opacity: 0,
+    duration: 0.5,
+    scrollTrigger: {
+        trigger: '.page5',
+        start: 'top 60%',
+        end: 'top 30%'
+    }
+})
