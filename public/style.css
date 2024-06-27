@@ -856,9 +856,6 @@ video {
   width: 50vw;
 }
 
-.w-\[\]{
-  width: ;
-}
 
 .w-\[150px\]{
   width: 150px;
@@ -1250,9 +1247,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\]{
-  color: ;
-}
 
 .opacity-40{
   opacity: 0.4;
