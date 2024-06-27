@@ -603,14 +603,6 @@ video {
   position: relative;
 }
 
-.bottom-\[25vw\]{
-  bottom: 25vw;
-}
-
-.bottom-\[30vw\]{
-  bottom: 30vw;
-}
-
 .bottom-\[3vw\]{
   bottom: 3vw;
 }
@@ -631,12 +623,12 @@ video {
   right: 0px;
 }
 
-.top-80{
-  top: 20rem;
-}
-
 .top-24{
   top: 6rem;
+}
+
+.top-80{
+  top: 20rem;
 }
 
 .top-\[10vh\]{
@@ -1483,10 +1475,6 @@ video {
 }
 
 @media (min-width: 768px){
-
-  .md\:bottom-\[12vw\]{
-    bottom: 12vw;
-  }
 
   .md\:mt-10{
     margin-top: 2.5rem;
