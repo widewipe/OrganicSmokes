@@ -44,6 +44,10 @@
         font-weight: 900;
         src: url(/OrganicSmokes/public/assets/fonts/gilroy/Gilroy-Black.ttf) format("truetype");
     }
+    @font-face {
+        font-family: 'strretch sans';
+        src: url(/OrganicSmokes/public/assets/fonts/strretch/STRRETCH\ SANS.ttf) format("truetype");
+    }
 }
 
 @tailwind utilities;

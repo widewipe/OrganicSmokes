@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         gilory: ['Gilory', 'sans-serif'],
         sans: ['Gilory', 'sans-serif'],
+        strretch :['strretch sans','sans-serif'],
         // 'futura': ['futura', 'sans-serif'],
         // 'poppins': ['Poppins', 'sans-serif'],
         'emot': ['emotional', 'serif']
