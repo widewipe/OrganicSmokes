@@ -62,7 +62,7 @@ tl.from(".text-center",{
 })
 tl.from(".flex-text",{
     y:150,
-    
+    scale:0.9,
     opacity:0,
     // duration:2.2,
     scrollTrigger:{
