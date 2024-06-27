@@ -90,47 +90,52 @@ gsap.from(".rrow", {
 
 //page4
 
-   //float animation
+//float animation
 
-gsap.to("#product_pack", { duration: 2, y:-0.1, ease: Power1.easeInOut, repeat: -1, yoyo: true })
-
-   //fade animation
-   
-const productanimation=()=>{
-tlproduct=new TimelineMax({ repeat: -1 })
-
-.from(".pack1",{
-    opacity:0,
-    y:45,
-    delay:0.1,
-    duration:1.5
-})
-
-.to(".pack1",{
-    opacity:0,
-    y:-45,
-    delay:6,
-    duration:1.5
-})
-
-
-.from(".pack2",{
-    opacity:0,
-    y:45,
-    duration:1.5
-})
-
-.to(".pack2",{
-    opacity:0,
-    y:-45,
-    delay:6,
-    duration:1.5
-})
-
-gsap.to(tlproduct, 27, {ease:Power1.easeInOut})
-}
-productanimation()
-
+gsap.to("#product_pack", { duration: 2, y:-10, ease: Power1.easeInOut, repeat: -1, yoyo: true, willChange: "transform" })
+  
+ //fade animation
+ 
+  const productAnimation = () => {
+    const tlProduct = gsap.timeline({ repeat: -1, repeatDelay: 0.5 }); 
+  
+    tlProduct
+      .fromTo(".pack1", {
+        opacity: 0,
+        y: 45
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power1.out"
+      })
+      .to(".pack1", {
+        opacity: 0,
+        y: -45,
+        duration: 0.5,
+        ease: "power1.in",
+        delay: 5.5 
+      })
+      .fromTo(".pack2", {
+        opacity: 0,
+        y: 45
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power1.out"
+      })
+      .to(".pack2", {
+        opacity: 0,
+        y: -45,
+        duration: 0.5,
+        ease: "power1.in",
+        delay: 5.5 
+      });
+  };
+  
+  productAnimation();
+  
 // PAGE 5
 
 let p5h = document.getElementById('products-heading');
@@ -148,7 +153,7 @@ gsap.from(p5h, {
 })
 
 gsap.from(ts, {
-    y: -70,
+    x: -70,
     opacity: 0,
     duration: 0.5,
     scrollTrigger: {
