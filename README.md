@@ -1,3 +1,5 @@
+Organic Smokes
+
 - **Original Website Drawbacks:**
   - Missing landing page and direct product information
   - Lack of engaging animations to showcase product vibe
