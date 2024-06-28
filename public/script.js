@@ -166,6 +166,7 @@ gsap.from(ts, {
     }
 })
 
+
     //zoom effect
 
 smoke_box.addEventListener('mouseover',()=>{
@@ -247,3 +248,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const card2 = document.getElementById('card2');
     card_tilt(card2);
 });
+
+// 6th page
+const comments = gsap.utils.toArray('.comment');
+comments.reverse();
+
+// gsap.fromTo('.comment:nth-child(n)', {
+gsap.fromTo(comments,{
+    y:0,
+   
+},{
+    y:-800,
+    stagger: {
+        each: 0.5,
+        onStart: function() {
+            gsap.set(this.targets(), { rotate: gsap.utils.random(-9, 9) });
+        }
+    },
+    scrollTrigger:{
+        pin: ".page6",
+        scrub:0.8,
+
+    },
+})
+
