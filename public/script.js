@@ -1,6 +1,7 @@
 let ash=document.getElementById("ash_png")
 let burn=document.getElementById("burn_png")
 let second_page=document.getElementsByClassName("page2")[0]
+
 let tl = gsap.timeline({});
 
 ash.addEventListener('mouseover',()=>{
@@ -140,6 +141,8 @@ gsap.to("#product_pack", { duration: 2, y:-10, ease: Power1.easeInOut, repeat: -
 
 let p5h = document.getElementById('products-heading');
 let ts = document.getElementById('topsellers');
+let smoke_box=document.getElementsByClassName("smoke_box")[0]
+let smoke_bottle=document.getElementsByClassName("smoke_bottle")[0]
 
 gsap.from(p5h, {
     opacity: 0,
@@ -161,4 +164,48 @@ gsap.from(ts, {
         start: 'top 60%',
         end: 'top 30%'
     }
+})
+
+    //zoom effect
+
+smoke_box.addEventListener('mouseover',()=>{
+    console.log("mouse enter")
+    
+    
+    
+    gsap.to(".smoke_box",{
+        scale:1.1,
+        duration:0.8
+    })
+})
+smoke_box.addEventListener('mouseleave',()=>{
+    console.log("mouse leave")
+    
+    gsap.to(".smoke_box",{
+        scale:1,
+        duration:0.8
+    })
+    
+    
+})
+
+smoke_bottle.addEventListener('mouseover',()=>{
+    console.log("mouse enter")
+    
+    
+    
+    gsap.to(".smoke_bottle",{
+        scale:1.1,
+        duration:0.8
+    })
+})
+smoke_bottle.addEventListener('mouseleave',()=>{
+    console.log("mouse leave")
+    
+    gsap.to(".smoke_bottle",{
+        scale:1,
+        duration:0.8
+    })
+    
+    
 })
