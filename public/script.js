@@ -191,9 +191,6 @@ smoke_box.addEventListener('mouseleave',()=>{
 
 smoke_bottle.addEventListener('mouseover',()=>{
     console.log("mouse enter")
-    
-    
-    
     gsap.to(".smoke_bottle",{
         scale:1.1,
         duration:0.8
@@ -209,3 +206,44 @@ smoke_bottle.addEventListener('mouseleave',()=>{
     
     
 })
+
+    //tilt animation
+
+const card_tilt = (element) => {
+    const selector = `#${element.id}`;
+    const rect = element.getBoundingClientRect();
+    element.addEventListener('mousemove', (event) => {
+        gsap.set(element, { transformPerspective: 500 });
+
+        const x = event.clientX - rect.left; // X coordinate relative to the element
+        const y = event.clientY - rect.top;  // Y coordinate relative to the element
+        
+        const xMid = rect.width / 2;
+        const yMid = rect.height / 2;
+
+        const rotateY = (x - xMid) / xMid * 5; // Tilt range is -5 to 5 degrees
+        const rotateX = -(y - yMid) / yMid * 2; // Tilt range is -2 to 2 degrees
+        gsap.to(selector, {
+            rotateY: rotateY,
+            rotateX: rotateX,
+            duration: 0.5,
+            ease: "slow",
+        });
+    });
+
+    element.addEventListener('mouseleave', () => {
+        gsap.to(selector, {
+            rotateY: 0,
+            rotateX: 0,
+            duration: 0.5,
+            ease: "power1.out",
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const card1 = document.getElementById('card1');
+    card_tilt(card1);
+    const card2 = document.getElementById('card2');
+    card_tilt(card2);
+});
