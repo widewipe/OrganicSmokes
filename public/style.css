@@ -1769,6 +1769,15 @@ video {
     height: 100%;
   }
 
+  .sm\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .sm\:h-\[50vh\]{
+    height: 50vh;
+  }
+
   .sm\:max-h-\[50vh\]{
     max-height: 50vh;
   }
@@ -1945,6 +1954,11 @@ video {
     height: 30%;
   }
 
+  .md\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
   .md\:min-h-\[50vh\]{
     min-height: 50vh;
   }
@@ -2055,6 +2069,10 @@ video {
 
   .lg\:h-\[70\%\]{
     height: 70%;
+  }
+
+  .lg\:h-\[50vh\]{
+    height: 50vh;
   }
 
   .lg\:w-3\/5{
