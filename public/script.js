@@ -280,3 +280,45 @@ gsap.fromTo(comments,{
     },
 })
 
+var cursor = document.querySelector('.cursor'),
+    cursorScale = document.querySelectorAll('.cursor-scale'),
+    mouseX = 0,
+    mouseY = 0,
+    posX = 0,
+    posY = 0;
+
+gsap.to({}, 0.016, {
+    repeat: -1,
+    ease: "power3.out",
+
+    onRepeat: function () {
+        posX += (mouseX - posX) * 0.25; // Adjust 0.25 for smoothness
+        posY += (mouseY - posY) * 0.25; // Adjust 0.25 for smoothness
+
+        gsap.set(cursor, {
+            css: {
+                left: mouseX,
+                top: mouseY
+            }
+        })
+    }
+});
+
+window.addEventListener("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY
+});
+
+cursorScale.forEach(link => {
+    link.addEventListener('mouseleave', () => {
+        cursor.classList.remove('grow');
+        cursor.classList.remove('grow-small');
+    });
+    link.addEventListener('mousemove', () => {
+        cursor.classList.add('grow');
+        if(link.classList.contains('small')){
+            cursor.classList.remove('grow');
+            cursor.classList.add('grow-small');
+        }
+    });
+});
