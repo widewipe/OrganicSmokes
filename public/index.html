@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <title>Organic Smokes</title>
 </head>
@@ -46,9 +47,12 @@
               THE CIGARETTE<br />YOU’VE BEEN<br />LOOKING FOR
             </p>
             <div class="relative -translate-x-0 w-[350px] sm:w-52 h-[1px] bg-white opacity-40 mt-2"></div>
-            <div class="relative -translate-x-7 cursor-pointer z-10 flex gap-2 justify-end items-center mt-4"
-            id="circle-btn">
-              <div class="w-10 sm:w-16 h-10 sm:h-16 translate-x-8 sm:translate-x-12 rounded-full bg-primary"></div>
+            <div class="relative -translate-x-12 cursor-pointer z-10 flex gap-2 justify-end items-center mt-4"
+              id="circle-btn">
+              <div class="orangeCircle relative sm:h-full sm:w-[150px] sm:left-[45%]">
+
+              <div class="orangeCircle w-10 sm:w-16 h-10 sm:h-16  max-sm:translate-x-8  rounded-full bg-primary"></div>
+              </div>
               <p class="circtxt z-10 font-gilory font-medium text-base sm:text-lg lg:text-xl">
                 I want to try
               </p>
@@ -157,7 +161,7 @@
       </div>
     </div>
 
-    <div class="page3 w-full lg:h-screen h-[80vh] flex flex-col items-center">
+    <div class="page3 w-full lg:h-screen h-[80vh] flex flex-col items-center overflow-hidden">
       <div
         class="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold px-4 sm:px-6 md:px-8 lg:px-12 pt-10 sm:pt-12 md:pt-14 lg:pt-[5vw]">
         <h1 class="p3h">
@@ -252,8 +256,10 @@
           <div class="orangeButton text-white mb-4 sm:mb-0">
             <div class="relative sm:top-[30%] sm:left-[-70%]">
               <div class="relative -translate-x-7 cursor-pointer flex gap-2 justify-center sm:justify-end items-center mt-4" id="circle-btn">
-                <div class="w-14 sm:w-24 h-14 sm:h-24 translate-x-10 sm:translate-x-16 rounded-full bg-primary"></div>
-                <p class="circtxt z-10 font-gilory font-medium text-base sm:text-lg lg:text-2xl text-nowrap">
+                <div class="orangeCircle sm:relative h-full  sm:w-[250px] sm:left-1/2">
+                  <div class="  w-14 sm:w-24 h-14 sm:h-24 max-sm:translate-x-10  rounded-full bg-primary"></div>
+                </div>
+                <p class="circtxt  z-10 font-gilory sm:w-[200px] font-medium text-base sm:text-lg lg:text-2xl text-nowrap">
                   View all products
                 </p>
 
@@ -369,6 +375,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
   <script src="script.js"></script>
 </body>

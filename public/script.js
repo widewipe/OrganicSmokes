@@ -4,8 +4,15 @@ let second_page=document.getElementsByClassName("page2")[0]
 
 let tl = gsap.timeline({});
 
+// orange circle 
+Shery.makeMagnet(".orangeCircle", {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
+
 ash.addEventListener('mouseover',()=>{
-    console.log("mouse enter")
+    // console.log("mouse enter")
     
     
     // gsap.to("#flames",{
@@ -18,7 +25,7 @@ ash.addEventListener('mouseover',()=>{
     })
 })
 ash.addEventListener('mouseleave',()=>{
-    console.log("mouse leave")
+    // console.log("mouse leave")
     tl=gsap.timeline()
     gsap.to("#ash_png",{
         opacity:1,
@@ -169,53 +176,53 @@ gsap.from(ts, {
 
     //zoom effect
 
-smoke_box.addEventListener('mouseover',()=>{
-    console.log("mouse enter")
+// smoke_box.addEventListener('mouseover',()=>{
+//     console.log("mouse enter")
     
     
     
-    gsap.to(".smoke_box",{
-        scale:1.1,
-        duration:0.8
-    })
-})
-smoke_box.addEventListener('mouseleave',()=>{
-    console.log("mouse leave")
+//     gsap.to(".smoke_box",{
+//         scale:1.1,
+//         duration:0.8
+//     })
+// })
+// smoke_box.addEventListener('mouseleave',()=>{
+//     console.log("mouse leave")
     
-    gsap.to(".smoke_box",{
-        scale:1,
-        duration:0.8
-    })
+//     gsap.to(".smoke_box",{
+//         scale:1,
+//         duration:0.8
+//     })
     
     
-})
+// })
 
-smoke_bottle.addEventListener('mouseover',()=>{
-    console.log("mouse enter")
-    gsap.to(".smoke_bottle",{
-        scale:1.1,
-        duration:0.8
-    })
-})
-smoke_bottle.addEventListener('mouseleave',()=>{
-    console.log("mouse leave")
+// smoke_bottle.addEventListener('mouseover',()=>{
+//     console.log("mouse enter")
+//     gsap.to(".smoke_bottle",{
+//         scale:1.1,
+//         duration:0.8
+//     })
+// })
+// smoke_bottle.addEventListener('mouseleave',()=>{
+//     console.log("mouse leave")
     
-    gsap.to(".smoke_bottle",{
-        scale:1,
-        duration:0.8
-    })
+//     gsap.to(".smoke_bottle",{
+//         scale:1,
+//         duration:0.8
+//     })
     
     
-})
+// })
 
     //tilt animation
 
 const card_tilt = (element) => {
     const selector = `#${element.id}`;
-    const rect = element.getBoundingClientRect();
     element.addEventListener('mousemove', (event) => {
         gsap.set(element, { transformPerspective: 500 });
-
+        
+        const rect = element.getBoundingClientRect();
         const x = event.clientX - rect.left; // X coordinate relative to the element
         const y = event.clientY - rect.top;  // Y coordinate relative to the element
         
@@ -243,6 +250,7 @@ const card_tilt = (element) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    
     const card1 = document.getElementById('card1');
     card_tilt(card1);
     const card2 = document.getElementById('card2');
