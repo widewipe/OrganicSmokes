@@ -755,6 +755,10 @@ video {
   left: 45%;
 }
 
+.top-24{
+  top: 6rem;
+}
+
 .z-10{
   z-index: 10;
 }
