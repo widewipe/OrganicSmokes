@@ -4,8 +4,15 @@ let second_page=document.getElementsByClassName("page2")[0]
 
 let tl = gsap.timeline({});
 
+// orange circle 
+Shery.makeMagnet(".orangeCircle", {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
+
 ash.addEventListener('mouseover',()=>{
-    console.log("mouse enter")
+    // console.log("mouse enter")
     
     
     // gsap.to("#flames",{
@@ -18,7 +25,7 @@ ash.addEventListener('mouseover',()=>{
     })
 })
 ash.addEventListener('mouseleave',()=>{
-    console.log("mouse leave")
+    // console.log("mouse leave")
     tl=gsap.timeline()
     gsap.to("#ash_png",{
         opacity:1,
