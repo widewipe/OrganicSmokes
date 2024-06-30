@@ -2,7 +2,6 @@ let ash=document.getElementById("ash_png")
 let burn=document.getElementById("burn_png")
 let second_page=document.getElementsByClassName("page2")[0]
 
-let tl = gsap.timeline({});
 
 // orange circle 
 Shery.makeMagnet(".orangeCircle", {
@@ -250,7 +249,7 @@ const card_tilt = (element) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+       
     const card1 = document.getElementById('card1');
     card_tilt(card1);
     const card2 = document.getElementById('card2');
@@ -280,3 +279,47 @@ gsap.fromTo(comments,{
     },
 })
 
+// cursor micro interactions
+
+var cursor = document.querySelector('.cursor'),
+    cursorScale = document.querySelectorAll('.cursor-scale'),
+    mouseX = 0,
+    mouseY = 0,
+    posX = 0,
+    posY = 0;
+
+gsap.to({}, 0.016, {
+    repeat: -1,
+    ease: "power3.out",
+
+    onRepeat: function () {
+        posX += (mouseX - posX) * 0.25; 
+        posY += (mouseY - posY) * 0.25; 
+
+        gsap.set(cursor, {
+            css: {
+                left: mouseX,
+                top: mouseY
+            }
+        })
+    }
+});
+
+window.addEventListener("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY
+});
+
+cursorScale.forEach(link => {
+    link.addEventListener('mouseleave', () => {
+        cursor.classList.remove('grow');
+        cursor.classList.remove('grow-small');
+    });
+    link.addEventListener('mousemove', () => {
+        cursor.classList.add('grow');
+        if(link.classList.contains('small')){
+            cursor.classList.remove('grow');
+            cursor.classList.add('grow-small');
+        }
+    });
+});

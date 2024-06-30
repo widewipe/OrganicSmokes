@@ -51,3 +51,29 @@
 }
 
 @tailwind utilities;
+
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #FF6E05;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+
+}
+
+.grow, .grow-small{
+  transform: scale(6);
+  background: #FF6E05;
+  mix-blend-mode: difference;
+  border: none;
+}
+.grow-small{
+  transform: scale(2.5);
+}
