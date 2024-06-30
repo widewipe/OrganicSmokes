@@ -2,7 +2,6 @@ let ash=document.getElementById("ash_png")
 let burn=document.getElementById("burn_png")
 let second_page=document.getElementsByClassName("page2")[0]
 
-let tl = gsap.timeline({});
 
 // orange circle 
 Shery.makeMagnet(".orangeCircle", {
@@ -250,7 +249,7 @@ const card_tilt = (element) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+       
     const card1 = document.getElementById('card1');
     card_tilt(card1);
     const card2 = document.getElementById('card2');
@@ -280,6 +279,8 @@ gsap.fromTo(comments,{
     },
 })
 
+// cursor micro interactions
+
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     mouseX = 0,
@@ -292,8 +293,8 @@ gsap.to({}, 0.016, {
     ease: "power3.out",
 
     onRepeat: function () {
-        posX += (mouseX - posX) * 0.25; // Adjust 0.25 for smoothness
-        posY += (mouseY - posY) * 0.25; // Adjust 0.25 for smoothness
+        posX += (mouseX - posX) * 0.25; 
+        posY += (mouseY - posY) * 0.25; 
 
         gsap.set(cursor, {
             css: {

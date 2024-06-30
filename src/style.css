@@ -51,6 +51,7 @@
 }
 
 @tailwind utilities;
+
 .cursor{
     position: fixed;
     width: 40px;
