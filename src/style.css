@@ -48,6 +48,10 @@
         font-family: 'strretch sans';
         src: url(../public/assets/fonts/strretch/STRRETCH\ SANS.ttf) format("truetype");
     }
+    @font-face {
+        font-family: 'emotional';
+        src: url(./assets/fonts/EmotionalRescue/EmotionalRescue.ttf) format("truetype");
+    }
 }
 
 @tailwind utilities;

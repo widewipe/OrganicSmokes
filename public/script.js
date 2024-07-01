@@ -266,6 +266,8 @@ gsap.fromTo(comments,{
    
 },{
     y:-800,
+    opacity:0,
+    scale:1.1,
     stagger: {
         each: 0.5,
         onStart: function() {
